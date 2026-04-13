@@ -2,19 +2,34 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 <style>
 body {
   background: transparent;
   text-align: center;
-  font-family: Arial, sans-serif;
-  color: #2b0a3d; /* viola scuro */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #2b0a3d;
 }
+
 h1 {
-  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin: 20px 0 10px;
+  letter-spacing: 1px;
 }
+
 #countdown {
+  font-size: 34px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.date {
   font-size: 22px;
-  margin: 10px 0;
+  font-weight: 300;
+  margin-top: 10px;
+  letter-spacing: 2px;
 }
 </style>
 </head>
@@ -23,7 +38,7 @@ h1 {
 
 <h1>Ogni passo ci avvicina:</h1>
 <div id="countdown"></div>
-<div>6 giugno 2026</div>
+<div class="date">6 giugno 2026</div>
 
 <script>
 const targetDate = new Date("2026-06-06T00:00:00").getTime();
